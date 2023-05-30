@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/picnic">    
+    <link rel="stylesheet" href="../static/stylesheet.css">
+    <title>Random Movies</title>
+</head>
+<body>
+    <h1>Movie Results</h1>
+    <p>Hop on the sofa and watch the following movied:</p>
+    <ul style="list-style-type: none">
+        <!-- We can pass python variable with Jinja tag -->
+        <!-- <li>{{mov1}}</li>
+        <li>{{mov2}}</li> -->
+        <!-- Use a for loop with the proper Jinja tag -->
+        {% for movie in movies %}
+            <li>{{movie}}</li>
+        {% endfor %}
+    </ul>
+    <form action="/">
+        <input type="submit" value="🏡">
+    </form>
+</body>
+</html>

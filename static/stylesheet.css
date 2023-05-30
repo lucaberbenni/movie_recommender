@@ -1,0 +1,52 @@
+/* selector {
+    property:value;
+    another_property:another:value
+} */
+
+h1 {
+    color:rgb(15, 22, 243)
+}
+
+p {
+    color:rgb(40, 46, 220);
+    font-size: x-large;
+}
+
+ul {
+    color:rgb(59, 64, 224);
+    font-weight: 900;
+}
+
+body {
+    text-align: center;
+    background-image: url("../static/popcup.jpg");
+    background-size:250%;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: large;
+    font-weight: 900;
+    font-display: auto;
+}
+
+form {
+    color:rgb(101, 106, 228);
+    font-weight: 900;
+}
+
+.input-placeholder {
+    max-width: 50px;
+    background-color:beige;
+}
+
+.input-placeholder:hover {
+    background-color:rgb(227, 211, 148);
+    box-shadow: 3px 3px 6px;
+}
+
+#logo-homepage {
+    border-radius: 400px;
+}
+
+#logo-homepage:hover {
+    background-color: cadetblue;
+    box-shadow: 3px 3px 6px;
+}

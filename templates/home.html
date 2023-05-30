@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/picnic">
+    <link rel="stylesheet" href="../static/stylesheet.css">
+    <title>Welcome page</title>
+</head>
+<body>
+    <h1>Welcome to the naive recommender</h1>
+    <p>Rate on a scale 0-5 :</p>
+    <form action="/results">
+        {% for movie in movies %}
+        <li>{{movie}}</li>
+        <input class="input-placeholder" type="text" name="{{movie}}" ><br>
+        {% endfor %}
+        <input type="submit" value="🤙🏼">
+    </form>
+    <form action="/random">
+        <input type="submit" value="🎲">
+    </form>
+</body>
+</html>
