@@ -26,7 +26,7 @@ The project consists of the following files:
 
 To use the movie recommender system, follow these steps:
 
-1. Install the necessary dependencies by running `pip install -r requirements.txt`.
+1. Ensure that the required dependencies are installed (Pandas, Flask, NumPy, Sci-kit Learn).
 
 2. Run the Flask application by executing the command `python app.py`. The application will start running on `http://localhost:5000`.
 
